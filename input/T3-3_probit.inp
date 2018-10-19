@@ -1,0 +1,11 @@
+TITLE:	this is an example of a Logistic regression
+        for a binary or categorical observed
+        dependent variable with two covariates
+DATA:	FILE = "../data/test.dat";
+VARIABLE:	NAMES ARE u1 x1 x3;
+            USEVARIABLES ARE u1 x1 x3;
+	        CATEGORICAL = u1;  ! 定义计算变量
+!ANALYSIS:   ESTIMATOR = ML; 加上此行为LOGISTIC回归，去除则为PROBIT回归
+MODEL:	u1 ON x1 x3;
+
+OUTPUT:  SAMPSTAT Standardized;
