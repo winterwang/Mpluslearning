@@ -1,10 +1,10 @@
-------Begin Mplus Model Run: 2010月2018 14:44:28------
+------Begin Mplus Model Run: 20Oct2018 22:01:16------
 Target directory: .
 Run options:
 	Recursive (run models in subdirectories): FALSE
 	Show output on console: TRUE
 	Replace existing outfile: always
 ------
-Currently running model: ex3.5.inp
+Currently running model: T3-16.inp
 
-------End Mplus Model Run: 2010月2018 14:44:29------
+------End Mplus Model Run: 20Oct2018 22:01:18------

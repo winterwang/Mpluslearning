@@ -22,3 +22,9 @@ runModels("ex3.5.inp", showOutput = TRUE, Mplus_command = "/opt/mplus/8.1/mplus"
 
 Output <- readModels("ex3.5.out")
 readModels("ex3.5.out", what="summaries")
+
+
+# Chapter 3 p53 -----------------------------------------------------------
+
+
+runModels("T3-16.inp", showOutput = TRUE, Mplus_command = "/opt/mplus/8.1/mplus")

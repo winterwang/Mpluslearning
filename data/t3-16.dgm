@@ -1,0 +1,70 @@
+VERSION 1.0.0
+INPUT
+TITLE:
+ this is an example of a path analysis
+DATA:
+ FILE IS 8-data.dat;
+VARIABLE:
+ NAMES ARE age gender a1-a5 e1-e13 b1-b20 c1-c17 d1-d10;
+  USEVARIABLE = stress negtive self depre;
+DEFINE:
+ stress = sum(a1-a5);
+               negtive= sum(b13-b17);
+               self=sum(d1-d5);
+               depre=sum(e1-e5);
+ANALYSIS:
+ Bootstrap=1000;
+OUTPUT:
+  standardized CINTERVAL(BCBOOTSTRAP);
+MODEL:
+ depre on stress negtive self;
+              negtive on stress;
+              self on stress;
+INPUT_END
+3
+1
+1
+1
+1
+GENERAL
+0
+3
+0
+1
+negtive self depre stress
+3
+1 1 2 0
+0
+0
+1 1 stress depre    0.387    0.014    0.360    0.414
+1 1 negtive depre    0.188    0.017    0.155    0.220
+1 1 self depre    0.003    0.014   -0.025    0.031
+1 1 stress negtive    0.163    0.013    0.137    0.189
+1 1 stress self   -0.155    0.015   -0.184   -0.126
+4 1 negtive    8.775    0.199    8.385    9.165
+4 1 self   10.894    0.237   10.430   11.358
+4 1 depre    7.300    0.272    6.767    7.832
+11 1 stress depre    0.461
+11 1 negtive depre    0.179
+11 1 self depre    0.003
+11 1 stress negtive    0.204
+11 1 stress self   -0.175
+14 1 negtive    0.959
+14 1 self    0.969
+14 1 depre    0.722
+21 1 stress depre    0.122
+21 1 negtive depre    0.179
+21 1 self depre    0.003
+21 1 stress negtive    0.054
+21 1 stress self   -0.046
+24 1 negtive    0.959
+24 1 self    0.969
+24 1 depre    0.722
+31 1 stress depre    0.387
+31 1 negtive depre    0.188
+31 1 self depre    0.003
+31 1 stress negtive    0.163
+31 1 stress self   -0.155
+34 1 negtive    8.775
+34 1 self   10.894
+34 1 depre    7.300
