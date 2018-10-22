@@ -1,0 +1,14 @@
+    TITLE: The EFA structure of CES-D in table 4-3
+    DATA:        FILE IS "data/CFA for CES-D.dat";
+    VARIABLE: NAMES = age gender y1-y20 i1-i10;
+              USEVARIABLES = y1-y20;
+    ANALYSIS: ROTATION = GEOMIN (oblique); !确定因子旋转方法，系统默认GEOMIN。
+                                          !本例采用默认设置，当然也可以选择其他旋转法。
+              ESTIMATOR = MLR; !选择提取公因子的方法；
+              TYPE = EFA 1 4; !定义抽取因子的个数从1到4个，
+                              !如果只抽取特定个数，只需将两个数字设为相同的数值即可。
+    OUTPUT:  MOD; !要求输出标准化值和修正指数；
+    PLOT: TYPE IS PLOT2; !要求报告碎石图。
+
+
+

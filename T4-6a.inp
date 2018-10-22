@@ -1,0 +1,10 @@
+TITLE: this is an example of an ESEM in table 4-6a
+
+DATA: FILE IS "data/CFA for CES-D.dat";
+
+VARIABLE: NAMES = age gender y1-y20;
+Usevariable= y1-y20;
+
+MODEL:	F1-F3 BY y1-y20 (*1); !括号内的星号定义f1-f3为ESEM因子；
+
+OUTPUT:	 STANDARDIZED MOD;
