@@ -1,0 +1,1805 @@
+Mplus VERSION 8.1 (Linux)
+MUTHEN & MUTHEN
+10/22/2018  10:10 PM
+
+INPUT INSTRUCTIONS
+
+      TITLE: The EFA structure of CES-D in table 4-3
+      DATA:        FILE IS "data/CFA for CES-D.dat";
+      VARIABLE: NAMES = age gender y1-y20 i1-i10;
+                USEVARIABLES = y1-y20;
+      ANALYSIS: ROTATION = GEOMIN (oblique); !确定因子旋转方法，系统默认GEOMIN�
+                                            !本例采用默认设置，当然也可以选�
+                ESTIMATOR = MLR; !选择提取公因子的方法；
+                TYPE = EFA 1 4; !定义抽取因子的个数从1到4个，
+                                !如果只抽取特定个数，只需将两个数字设为�
+      OUTPUT:  MOD; !要求输出标准化值和修正指数；
+      PLOT: TYPE IS PLOT2; !要求报告碎石图。
+
+
+
+
+
+
+*** WARNING
+  Input line exceeded 90 characters. Some input may be truncated.
+      ANALYSIS: ROTATION = GEOMIN (oblique); !确定因子旋转方法，系统默认GEOMIN�
+*** WARNING
+  Input line exceeded 90 characters. Some input may be truncated.
+                                            !本例采用默认设置，当然也可以选择
+*** WARNING
+  Input line exceeded 90 characters. Some input may be truncated.
+                                !如果只抽取特定个数，只需将两个数字设为相
+   3 WARNING(S) FOUND IN THE INPUT INSTRUCTIONS
+
+
+
+The EFA structure of CES-D in table 4-3
+
+SUMMARY OF ANALYSIS
+
+Number of groups                                                 1
+Number of observations                                        2530
+
+Number of dependent variables                                   20
+Number of independent variables                                  0
+Number of continuous latent variables                            0
+
+Observed dependent variables
+
+  Continuous
+   Y1          Y2          Y3          Y4          Y5          Y6
+   Y7          Y8          Y9          Y10         Y11         Y12
+   Y13         Y14         Y15         Y16         Y17         Y18
+   Y19         Y20
+
+
+Estimator                                                      MLR
+Rotation                                                    GEOMIN
+Row standardization                                    CORRELATION
+Type of rotation                                           OBLIQUE
+Epsilon value                                               Varies
+Information matrix                                        OBSERVED
+Maximum number of iterations                                  1000
+Convergence criterion                                    0.500D-04
+Maximum number of steepest descent iterations                   20
+Optimization Specifications for the Exploratory Factor Analysis
+Rotation Algorithm
+  Number of random starts                                       30
+  Maximum number of iterations                               10000
+  Derivative convergence criterion                       0.100D-04
+
+Input data file(s)
+  data/CFA for CES-D.dat
+
+Input data format  FREE
+
+
+
+UNIVARIATE SAMPLE STATISTICS
+
+
+     UNIVARIATE HIGHER-ORDER MOMENT DESCRIPTIVE STATISTICS
+
+         Variable/         Mean/     Skewness/   Minimum/ % with                Percentiles
+        Sample Size      Variance    Kurtosis    Maximum  Min/Max      20%/60%    40%/80%    Median
+
+     Y1                    2.190       0.340       1.000   15.22%       2.000      2.000      2.000
+            2530.000       0.547      -0.021       4.000    4.43%       2.000      3.000
+     Y2                    1.758       0.563       1.000   36.28%       1.000      2.000      2.000
+            2530.000       0.448       0.242       4.000    1.19%       2.000      2.000
+     Y3                    1.894       0.591       1.000   34.74%       1.000      2.000      2.000
+            2530.000       0.646      -0.232       4.000    3.44%       2.000      3.000
+     Y4                    2.268       0.276       1.000   18.10%       2.000      2.000      2.000
+            2530.000       0.727      -0.521       4.000    8.46%       2.000      3.000
+     Y5                    2.143       0.463       1.000   16.48%       2.000      2.000      2.000
+            2530.000       0.545       0.202       4.000    4.66%       2.000      3.000
+     Y6                    2.006       0.473       1.000   24.07%       1.000      2.000      2.000
+            2530.000       0.554       0.086       4.000    3.32%       2.000      3.000
+     Y7                    1.963       0.518       1.000   25.02%       1.000      2.000      2.000
+            2530.000       0.520       0.303       4.000    2.89%       2.000      2.000
+     Y8                    2.049       0.469       1.000   28.18%       1.000      2.000      2.000
+            2530.000       0.726      -0.426       4.000    5.81%       2.000      3.000
+     Y9                    1.711       0.863       1.000   44.03%       1.000      1.000      2.000
+            2530.000       0.554       0.400       4.000    2.33%       2.000      2.000
+     Y10                   1.840       0.727       1.000   35.69%       1.000      2.000      2.000
+            2530.000       0.596       0.245       4.000    3.40%       2.000      2.000
+     Y11                   2.082       0.480       1.000   28.14%       1.000      2.000      2.000
+            2530.000       0.788      -0.504       4.000    7.47%       2.000      3.000
+     Y12                   2.034       0.397       1.000   22.89%       1.000      2.000      2.000
+            2530.000       0.552      -0.053       4.000    3.08%       2.000      3.000
+     Y13                   2.009       0.541       1.000   24.23%       1.000      2.000      2.000
+            2530.000       0.574       0.182       4.000    4.03%       2.000      3.000
+     Y14                   1.938       0.650       1.000   31.15%       1.000      2.000      2.000
+            2530.000       0.651       0.041       4.000    4.70%       2.000      3.000
+     Y15                   1.715       0.803       1.000   41.11%       1.000      1.000      2.000
+            2530.000       0.496       0.600       4.000    1.98%       2.000      2.000
+     Y16                   2.111       0.342       1.000   26.05%       1.000      2.000      2.000
+            2530.000       0.738      -0.602       4.000    5.89%       2.000      3.000
+     Y17                   1.909       0.678       1.000   31.46%       1.000      2.000      2.000
+            2530.000       0.614       0.208       4.000    4.15%       2.000      2.000
+     Y18                   2.047       0.481       1.000   23.00%       1.000      2.000      2.000
+            2530.000       0.589       0.023       4.000    4.23%       2.000      3.000
+     Y19                   1.679       0.868       1.000   43.83%       1.000      1.000      2.000
+            2530.000       0.491       0.699       4.000    1.90%       2.000      2.000
+     Y20                   1.502       1.135       1.000   56.88%       1.000      1.000      1.000
+            2530.000       0.410       1.148       4.000    0.99%       2.000      2.000
+
+
+SUMMARY OF MODEL FIT INFORMATION
+
+
+                   Number of                   Degrees of
+     Model        Parameters      Chi-Square    Freedom     P-Value
+
+     1-factor          60           2560.977       170       0.0000
+     2-factor          79           1513.519       151       0.0000
+     3-factor          97            784.046       133       0.0000
+     4-factor         114            493.080       116       0.0000
+
+                                               Degrees of
+     Models Compared              Chi-Square    Freedom     P-Value
+
+     1-factor against 2-factor       985.267        19       0.0000
+     2-factor against 3-factor       674.667        18       0.0000
+     3-factor against 4-factor       248.553        17       0.0000
+
+
+
+RESULTS FOR EXPLORATORY FACTOR ANALYSIS
+
+
+           EIGENVALUES FOR SAMPLE CORRELATION MATRIX
+                  1             2             3             4             5
+              ________      ________      ________      ________      ________
+                7.151         1.696         1.101         0.943         0.880
+
+
+           EIGENVALUES FOR SAMPLE CORRELATION MATRIX
+                  6             7             8             9            10
+              ________      ________      ________      ________      ________
+                0.837         0.760         0.752         0.678         0.618
+
+
+           EIGENVALUES FOR SAMPLE CORRELATION MATRIX
+                 11            12            13            14            15
+              ________      ________      ________      ________      ________
+                0.584         0.572         0.531         0.500         0.494
+
+
+           EIGENVALUES FOR SAMPLE CORRELATION MATRIX
+                 16            17            18            19            20
+              ________      ________      ________      ________      ________
+                0.454         0.433         0.389         0.338         0.288
+
+
+EXPLORATORY FACTOR ANALYSIS WITH 1 FACTOR(S):
+
+
+MODEL FIT INFORMATION
+
+Number of Free Parameters                       60
+
+Loglikelihood
+
+          H0 Value                      -50497.095
+          H0 Scaling Correction Factor      1.1836
+            for MLR
+          H1 Value                      -48887.287
+          H1 Scaling Correction Factor      1.2380
+            for MLR
+
+Information Criteria
+
+          Akaike (AIC)                  101114.190
+          Bayesian (BIC)                101464.349
+          Sample-Size Adjusted BIC      101273.713
+            (n* = (n + 2) / 24)
+
+Chi-Square Test of Model Fit
+
+          Value                           2560.977*
+          Degrees of Freedom                   170
+          P-Value                           0.0000
+          Scaling Correction Factor         1.2572
+            for MLR
+
+*   The chi-square value for MLM, MLMV, MLR, ULSMV, WLSM and WLSMV cannot be used
+    for chi-square difference testing in the regular way.  MLM, MLR and WLSM
+    chi-square difference testing is described on the Mplus website.  MLMV, WLSMV,
+    and ULSMV difference testing is done using the DIFFTEST option.
+
+RMSEA (Root Mean Square Error Of Approximation)
+
+          Estimate                           0.075
+          90 Percent C.I.                    0.072  0.077
+          Probability RMSEA <= .05           0.000
+
+CFI/TLI
+
+          CFI                                0.830
+          TLI                                0.810
+
+Chi-Square Test of Model Fit for the Baseline Model
+
+          Value                          14259.106
+          Degrees of Freedom                   190
+          P-Value                           0.0000
+
+SRMR (Standardized Root Mean Square Residual)
+
+          Value                              0.057
+
+
+
+MINIMUM ROTATION FUNCTION VALUE       6.54524
+
+
+
+           GEOMIN ROTATED LOADINGS (* significant at 5% level)
+                  1
+              ________
+ Y1             0.587*
+ Y2             0.419*
+ Y3             0.649*
+ Y4             0.166*
+ Y5             0.528*
+ Y6             0.760*
+ Y7             0.630*
+ Y8             0.311*
+ Y9             0.673*
+ Y10            0.659*
+ Y11            0.418*
+ Y12            0.438*
+ Y13            0.470*
+ Y14            0.717*
+ Y15            0.657*
+ Y16            0.411*
+ Y17            0.475*
+ Y18            0.746*
+ Y19            0.704*
+ Y20            0.600*
+
+
+           GEOMIN FACTOR CORRELATIONS (* significant at 5% level)
+                  1
+              ________
+      1         1.000
+
+
+           ESTIMATED RESIDUAL VARIANCES
+              Y1            Y2            Y3            Y4            Y5
+              ________      ________      ________      ________      ________
+                0.656         0.825         0.578         0.973         0.722
+
+
+           ESTIMATED RESIDUAL VARIANCES
+              Y6            Y7            Y8            Y9            Y10
+              ________      ________      ________      ________      ________
+                0.423         0.603         0.903         0.547         0.566
+
+
+           ESTIMATED RESIDUAL VARIANCES
+              Y11           Y12           Y13           Y14           Y15
+              ________      ________      ________      ________      ________
+                0.826         0.808         0.779         0.486         0.569
+
+
+           ESTIMATED RESIDUAL VARIANCES
+              Y16           Y17           Y18           Y19           Y20
+              ________      ________      ________      ________      ________
+                0.831         0.774         0.444         0.505         0.640
+
+
+           S.E. GEOMIN ROTATED LOADINGS
+                  1
+              ________
+ Y1             0.015
+ Y2             0.019
+ Y3             0.015
+ Y4             0.023
+ Y5             0.018
+ Y6             0.011
+ Y7             0.017
+ Y8             0.022
+ Y9             0.014
+ Y10            0.015
+ Y11            0.019
+ Y12            0.019
+ Y13            0.020
+ Y14            0.012
+ Y15            0.015
+ Y16            0.021
+ Y17            0.019
+ Y18            0.011
+ Y19            0.014
+ Y20            0.017
+
+
+           S.E. GEOMIN FACTOR CORRELATIONS
+                  1
+              ________
+      1         0.000
+
+
+           S.E. ESTIMATED RESIDUAL VARIANCES
+              Y1            Y2            Y3            Y4            Y5
+              ________      ________      ________      ________      ________
+                0.018         0.016         0.019         0.008         0.019
+
+
+           S.E. ESTIMATED RESIDUAL VARIANCES
+              Y6            Y7            Y8            Y9            Y10
+              ________      ________      ________      ________      ________
+                0.017         0.021         0.014         0.019         0.020
+
+
+           S.E. ESTIMATED RESIDUAL VARIANCES
+              Y11           Y12           Y13           Y14           Y15
+              ________      ________      ________      ________      ________
+                0.016         0.017         0.019         0.018         0.020
+
+
+           S.E. ESTIMATED RESIDUAL VARIANCES
+              Y16           Y17           Y18           Y19           Y20
+              ________      ________      ________      ________      ________
+                0.017         0.018         0.016         0.020         0.020
+
+
+           Est./S.E. GEOMIN ROTATED LOADINGS
+                  1
+              ________
+ Y1            38.752
+ Y2            21.601
+ Y3            44.289
+ Y4             7.203
+ Y5            29.811
+ Y6            69.331
+ Y7            37.660
+ Y8            13.965
+ Y9            48.722
+ Y10           43.885
+ Y11           22.082
+ Y12           22.815
+ Y13           23.123
+ Y14           57.628
+ Y15           42.874
+ Y16           20.037
+ Y17           24.509
+ Y18           67.673
+ Y19           49.424
+ Y20           36.334
+
+
+           Est./S.E. GEOMIN FACTOR CORRELATIONS
+                  1
+              ________
+      1         0.000
+
+
+           Est./S.E. ESTIMATED RESIDUAL VARIANCES
+              Y1            Y2            Y3            Y4            Y5
+              ________      ________      ________      ________      ________
+               36.889        50.776        30.373       127.717        38.644
+
+
+           Est./S.E. ESTIMATED RESIDUAL VARIANCES
+              Y6            Y7            Y8            Y9            Y10
+              ________      ________      ________      ________      ________
+               25.387        28.555        65.285        29.431        28.643
+
+
+           Est./S.E. ESTIMATED RESIDUAL VARIANCES
+              Y11           Y12           Y13           Y14           Y15
+              ________      ________      ________      ________      ________
+               52.285        48.096        40.804        27.256        28.269
+
+
+           Est./S.E. ESTIMATED RESIDUAL VARIANCES
+              Y16           Y17           Y18           Y19           Y20
+              ________      ________      ________      ________      ________
+               49.146        42.083        26.987        25.219        32.291
+
+
+EXPLORATORY FACTOR ANALYSIS WITH 2 FACTOR(S):
+
+
+MODEL FIT INFORMATION
+
+Number of Free Parameters                       79
+
+Loglikelihood
+
+          H0 Value                      -49829.305
+          H0 Scaling Correction Factor      1.2250
+            for MLR
+          H1 Value                      -48887.287
+          H1 Scaling Correction Factor      1.2380
+            for MLR
+
+Information Criteria
+
+          Akaike (AIC)                   99816.610
+          Bayesian (BIC)                100277.652
+          Sample-Size Adjusted BIC      100026.648
+            (n* = (n + 2) / 24)
+
+Chi-Square Test of Model Fit
+
+          Value                           1513.519*
+          Degrees of Freedom                   151
+          P-Value                           0.0000
+          Scaling Correction Factor         1.2448
+            for MLR
+
+*   The chi-square value for MLM, MLMV, MLR, ULSMV, WLSM and WLSMV cannot be used
+    for chi-square difference testing in the regular way.  MLM, MLR and WLSM
+    chi-square difference testing is described on the Mplus website.  MLMV, WLSMV,
+    and ULSMV difference testing is done using the DIFFTEST option.
+
+RMSEA (Root Mean Square Error Of Approximation)
+
+          Estimate                           0.060
+          90 Percent C.I.                    0.057  0.062
+          Probability RMSEA <= .05           0.000
+
+CFI/TLI
+
+          CFI                                0.903
+          TLI                                0.878
+
+Chi-Square Test of Model Fit for the Baseline Model
+
+          Value                          14259.106
+          Degrees of Freedom                   190
+          P-Value                           0.0000
+
+SRMR (Standardized Root Mean Square Residual)
+
+          Value                              0.035
+
+
+
+MINIMUM ROTATION FUNCTION VALUE       0.86484
+
+
+
+           GEOMIN ROTATED LOADINGS (* significant at 5% level)
+                  1             2
+              ________      ________
+ Y1             0.666*       -0.122*
+ Y2             0.400*        0.040
+ Y3             0.641*        0.026
+ Y4            -0.055*        0.384*
+ Y5             0.556*       -0.042
+ Y6             0.772*       -0.005
+ Y7             0.585*        0.085*
+ Y8            -0.045         0.632*
+ Y9             0.537*        0.245*
+ Y10            0.672*       -0.015
+ Y11            0.438*       -0.030
+ Y12            0.096*        0.622*
+ Y13            0.439*        0.057
+ Y14            0.683*        0.067
+ Y15            0.600*        0.097*
+ Y16            0.022         0.707*
+ Y17            0.549*       -0.118*
+ Y18            0.780*       -0.043
+ Y19            0.633*        0.123*
+ Y20            0.520*        0.140*
+
+
+           GEOMIN FACTOR CORRELATIONS (* significant at 5% level)
+                  1             2
+              ________      ________
+      1         1.000
+      2         0.466*        1.000
+
+
+           ESTIMATED RESIDUAL VARIANCES
+              Y1            Y2            Y3            Y4            Y5
+              ________      ________      ________      ________      ________
+                0.617         0.824         0.573         0.869         0.711
+
+
+           ESTIMATED RESIDUAL VARIANCES
+              Y6            Y7            Y8            Y9            Y10
+              ________      ________      ________      ________      ________
+                0.408         0.604         0.624         0.530         0.557
+
+
+           ESTIMATED RESIDUAL VARIANCES
+              Y11           Y12           Y13           Y14           Y15
+              ________      ________      ________      ________      ________
+                0.819         0.549         0.781         0.487         0.576
+
+
+           ESTIMATED RESIDUAL VARIANCES
+              Y16           Y17           Y18           Y19           Y20
+              ________      ________      ________      ________      ________
+                0.485         0.745         0.421         0.512         0.642
+
+
+           S.E. GEOMIN ROTATED LOADINGS
+                  1             2
+              ________      ________
+ Y1             0.019         0.025
+ Y2             0.024         0.028
+ Y3             0.020         0.025
+ Y4             0.026         0.027
+ Y5             0.023         0.028
+ Y6             0.011         0.005
+ Y7             0.023         0.028
+ Y8             0.024         0.024
+ Y9             0.023         0.029
+ Y10            0.021         0.029
+ Y11            0.023         0.027
+ Y12            0.034         0.033
+ Y13            0.027         0.032
+ Y14            0.023         0.035
+ Y15            0.030         0.045
+ Y16            0.026         0.030
+ Y17            0.025         0.033
+ Y18            0.018         0.028
+ Y19            0.030         0.045
+ Y20            0.027         0.036
+
+
+           S.E. GEOMIN FACTOR CORRELATIONS
+                  1             2
+              ________      ________
+      1         0.000
+      2         0.030         0.000
+
+
+           S.E. ESTIMATED RESIDUAL VARIANCES
+              Y1            Y2            Y3            Y4            Y5
+              ________      ________      ________      ________      ________
+                0.019         0.016         0.019         0.018         0.019
+
+
+           S.E. ESTIMATED RESIDUAL VARIANCES
+              Y6            Y7            Y8            Y9            Y10
+              ________      ________      ________      ________      ________
+                0.016         0.021         0.028         0.018         0.020
+
+
+           S.E. ESTIMATED RESIDUAL VARIANCES
+              Y11           Y12           Y13           Y14           Y15
+              ________      ________      ________      ________      ________
+                0.016         0.028         0.019         0.018         0.020
+
+
+           S.E. ESTIMATED RESIDUAL VARIANCES
+              Y16           Y17           Y18           Y19           Y20
+              ________      ________      ________      ________      ________
+                0.030         0.020         0.017         0.020         0.020
+
+
+           Est./S.E. GEOMIN ROTATED LOADINGS
+                  1             2
+              ________      ________
+ Y1            34.804        -4.847
+ Y2            16.595         1.449
+ Y3            32.271         1.043
+ Y4            -2.147        13.987
+ Y5            24.578        -1.490
+ Y6            70.699        -0.870
+ Y7            24.950         2.974
+ Y8            -1.856        26.617
+ Y9            22.990         8.519
+ Y10           31.821        -0.520
+ Y11           18.883        -1.113
+ Y12            2.803        19.127
+ Y13           16.341         1.781
+ Y14           29.807         1.920
+ Y15           19.970         2.156
+ Y16            0.849        23.541
+ Y17           21.811        -3.617
+ Y18           43.942        -1.520
+ Y19           21.300         2.757
+ Y20           19.142         3.907
+
+
+           Est./S.E. GEOMIN FACTOR CORRELATIONS
+                  1             2
+              ________      ________
+      1         0.000
+      2        15.637         0.000
+
+
+           Est./S.E. ESTIMATED RESIDUAL VARIANCES
+              Y1            Y2            Y3            Y4            Y5
+              ________      ________      ________      ________      ________
+               31.816        50.626        29.779        47.605        36.720
+
+
+           Est./S.E. ESTIMATED RESIDUAL VARIANCES
+              Y6            Y7            Y8            Y9            Y10
+              ________      ________      ________      ________      ________
+               25.047        28.704        22.468        28.754        27.673
+
+
+           Est./S.E. ESTIMATED RESIDUAL VARIANCES
+              Y11           Y12           Y13           Y14           Y15
+              ________      ________      ________      ________      ________
+               50.428        19.270        41.002        27.226        28.720
+
+
+           Est./S.E. ESTIMATED RESIDUAL VARIANCES
+              Y16           Y17           Y18           Y19           Y20
+              ________      ________      ________      ________      ________
+               15.938        37.103        25.056        25.613        32.798
+
+
+           FACTOR STRUCTURE
+                  1             2
+              ________      ________
+ Y1             0.610         0.188
+ Y2             0.418         0.226
+ Y3             0.653         0.324
+ Y4             0.124         0.358
+ Y5             0.537         0.217
+ Y6             0.769         0.354
+ Y7             0.625         0.357
+ Y8             0.250         0.612
+ Y9             0.651         0.495
+ Y10            0.665         0.298
+ Y11            0.424         0.174
+ Y12            0.385         0.666
+ Y13            0.466         0.262
+ Y14            0.714         0.385
+ Y15            0.646         0.377
+ Y16            0.351         0.717
+ Y17            0.494         0.138
+ Y18            0.760         0.320
+ Y19            0.690         0.418
+ Y20            0.585         0.383
+
+
+EXPLORATORY FACTOR ANALYSIS WITH 3 FACTOR(S):
+
+
+MODEL FIT INFORMATION
+
+Number of Free Parameters                       97
+
+Loglikelihood
+
+          H0 Value                      -49368.913
+          H0 Scaling Correction Factor      1.2509
+            for MLR
+          H1 Value                      -48887.287
+          H1 Scaling Correction Factor      1.2380
+            for MLR
+
+Information Criteria
+
+          Akaike (AIC)                   98931.825
+          Bayesian (BIC)                 99497.915
+          Sample-Size Adjusted BIC       99189.720
+            (n* = (n + 2) / 24)
+
+Chi-Square Test of Model Fit
+
+          Value                            784.046*
+          Degrees of Freedom                   133
+          P-Value                           0.0000
+          Scaling Correction Factor         1.2286
+            for MLR
+
+*   The chi-square value for MLM, MLMV, MLR, ULSMV, WLSM and WLSMV cannot be used
+    for chi-square difference testing in the regular way.  MLM, MLR and WLSM
+    chi-square difference testing is described on the Mplus website.  MLMV, WLSMV,
+    and ULSMV difference testing is done using the DIFFTEST option.
+
+RMSEA (Root Mean Square Error Of Approximation)
+
+          Estimate                           0.044
+          90 Percent C.I.                    0.041  0.047
+          Probability RMSEA <= .05           1.000
+
+CFI/TLI
+
+          CFI                                0.954
+          TLI                                0.934
+
+Chi-Square Test of Model Fit for the Baseline Model
+
+          Value                          14259.106
+          Degrees of Freedom                   190
+          P-Value                           0.0000
+
+SRMR (Standardized Root Mean Square Residual)
+
+          Value                              0.025
+
+
+
+MINIMUM ROTATION FUNCTION VALUE       0.47894
+
+
+
+           GEOMIN ROTATED LOADINGS (* significant at 5% level)
+                  1             2             3
+              ________      ________      ________
+ Y1             0.715*       -0.080*       -0.056
+ Y2             0.424*        0.064*       -0.021
+ Y3             0.692*        0.065*       -0.050
+ Y4            -0.148*        0.344*        0.150*
+ Y5             0.546*       -0.020         0.021
+ Y6             0.775*        0.029         0.012
+ Y7             0.560*        0.101*        0.050
+ Y8            -0.019         0.609*        0.020
+ Y9             0.421*        0.233*        0.174*
+ Y10            0.542*       -0.009         0.166*
+ Y11            0.416*       -0.012         0.029
+ Y12            0.156*        0.631*       -0.031
+ Y13            0.271*        0.040         0.219*
+ Y14            0.436*        0.044         0.321*
+ Y15            0.038        -0.016         0.762*
+ Y16            0.039         0.690*        0.035
+ Y17            0.426*       -0.111*        0.146*
+ Y18            0.614*       -0.037         0.210*
+ Y19           -0.003        -0.005         0.870*
+ Y20            0.210*        0.087*        0.419*
+
+
+           GEOMIN FACTOR CORRELATIONS (* significant at 5% level)
+                  1             2             3
+              ________      ________      ________
+      1         1.000
+      2         0.380*        1.000
+      3         0.668*        0.404*        1.000
+
+
+           ESTIMATED RESIDUAL VARIANCES
+              Y1            Y2            Y3            Y4            Y5
+              ________      ________      ________      ________      ________
+                0.573         0.808         0.529         0.864         0.694
+
+
+           ESTIMATED RESIDUAL VARIANCES
+              Y6            Y7            Y8            Y9            Y10
+              ________      ________      ________      ________      ________
+                0.368         0.589         0.627         0.533         0.563
+
+
+           ESTIMATED RESIDUAL VARIANCES
+              Y11           Y12           Y13           Y14           Y15
+              ________      ________      ________      ________      ________
+                0.814         0.523         0.782         0.491         0.390
+
+
+           ESTIMATED RESIDUAL VARIANCES
+              Y16           Y17           Y18           Y19           Y20
+              ________      ________      ________      ________      ________
+                0.479         0.751         0.428         0.249         0.612
+
+
+           S.E. GEOMIN ROTATED LOADINGS
+                  1             2             3
+              ________      ________      ________
+ Y1             0.029         0.032         0.037
+ Y2             0.032         0.030         0.031
+ Y3             0.031         0.030         0.034
+ Y4             0.036         0.029         0.036
+ Y5             0.034         0.029         0.036
+ Y6             0.021         0.029         0.021
+ Y7             0.033         0.032         0.038
+ Y8             0.014         0.030         0.030
+ Y9             0.034         0.027         0.040
+ Y10            0.039         0.013         0.045
+ Y11            0.035         0.026         0.038
+ Y12            0.043         0.028         0.018
+ Y13            0.045         0.028         0.048
+ Y14            0.047         0.025         0.052
+ Y15            0.043         0.017         0.045
+ Y16            0.046         0.026         0.034
+ Y17            0.042         0.028         0.047
+ Y18            0.038         0.026         0.042
+ Y19            0.006         0.012         0.017
+ Y20            0.033         0.027         0.037
+
+
+           S.E. GEOMIN FACTOR CORRELATIONS
+                  1             2             3
+              ________      ________      ________
+      1         0.000
+      2         0.040         0.000
+      3         0.023         0.034         0.000
+
+
+           S.E. ESTIMATED RESIDUAL VARIANCES
+              Y1            Y2            Y3            Y4            Y5
+              ________      ________      ________      ________      ________
+                0.020         0.017         0.019         0.017         0.021
+
+
+           S.E. ESTIMATED RESIDUAL VARIANCES
+              Y6            Y7            Y8            Y9            Y10
+              ________      ________      ________      ________      ________
+                0.017         0.022         0.029         0.019         0.020
+
+
+           S.E. ESTIMATED RESIDUAL VARIANCES
+              Y11           Y12           Y13           Y14           Y15
+              ________      ________      ________      ________      ________
+                0.017         0.027         0.019         0.018         0.025
+
+
+           S.E. ESTIMATED RESIDUAL VARIANCES
+              Y16           Y17           Y18           Y19           Y20
+              ________      ________      ________      ________      ________
+                0.029         0.020         0.017         0.030         0.021
+
+
+           Est./S.E. GEOMIN ROTATED LOADINGS
+                  1             2             3
+              ________      ________      ________
+ Y1            24.756        -2.495        -1.533
+ Y2            13.162         2.151        -0.682
+ Y3            22.342         2.144        -1.496
+ Y4            -4.085        12.081         4.176
+ Y5            16.026        -0.676         0.584
+ Y6            37.717         1.009         0.591
+ Y7            17.012         3.104         1.311
+ Y8            -1.313        20.315         0.684
+ Y9            12.481         8.476         4.349
+ Y10           13.881        -0.693         3.660
+ Y11           11.975        -0.461         0.775
+ Y12            3.667        22.443        -1.725
+ Y13            6.031         1.397         4.616
+ Y14            9.334         1.755         6.198
+ Y15            0.884        -0.943        17.053
+ Y16            0.853        26.179         1.042
+ Y17           10.104        -3.994         3.130
+ Y18           16.215        -1.423         5.005
+ Y19           -0.416        -0.395        51.370
+ Y20            6.366         3.272        11.404
+
+
+           Est./S.E. GEOMIN FACTOR CORRELATIONS
+                  1             2             3
+              ________      ________      ________
+      1         0.000
+      2         9.495         0.000
+      3        29.464        12.057         0.000
+
+
+           Est./S.E. ESTIMATED RESIDUAL VARIANCES
+              Y1            Y2            Y3            Y4            Y5
+              ________      ________      ________      ________      ________
+               28.489        46.295        27.225        50.002        33.570
+
+
+           Est./S.E. ESTIMATED RESIDUAL VARIANCES
+              Y6            Y7            Y8            Y9            Y10
+              ________      ________      ________      ________      ________
+               21.548        27.261        21.964        28.804        28.085
+
+
+           Est./S.E. ESTIMATED RESIDUAL VARIANCES
+              Y11           Y12           Y13           Y14           Y15
+              ________      ________      ________      ________      ________
+               48.301        19.378        41.445        27.462        15.363
+
+
+           Est./S.E. ESTIMATED RESIDUAL VARIANCES
+              Y16           Y17           Y18           Y19           Y20
+              ________      ________      ________      ________      ________
+               16.529        37.844        25.225         8.380        28.815
+
+
+           FACTOR STRUCTURE
+                  1             2             3
+              ________      ________      ________
+ Y1             0.647         0.169         0.389
+ Y2             0.435         0.217         0.288
+ Y3             0.684         0.308         0.439
+ Y4             0.083         0.349         0.191
+ Y5             0.553         0.197         0.378
+ Y6             0.794         0.329         0.542
+ Y7             0.632         0.334         0.465
+ Y8             0.226         0.610         0.254
+ Y9             0.626         0.463         0.549
+ Y10            0.650         0.264         0.525
+ Y11            0.431         0.158         0.303
+ Y12            0.375         0.678         0.329
+ Y13            0.433         0.231         0.417
+ Y14            0.668         0.339         0.631
+ Y15            0.541         0.306         0.780
+ Y16            0.325         0.719         0.341
+ Y17            0.482         0.111         0.386
+ Y18            0.741         0.282         0.606
+ Y19            0.577         0.346         0.867
+ Y20            0.523         0.336         0.594
+
+
+EXPLORATORY FACTOR ANALYSIS WITH 4 FACTOR(S):
+
+
+MODEL FIT INFORMATION
+
+Number of Free Parameters                      114
+
+Loglikelihood
+
+          H0 Value                      -49179.498
+          H0 Scaling Correction Factor      1.2917
+            for MLR
+          H1 Value                      -48887.287
+          H1 Scaling Correction Factor      1.2380
+            for MLR
+
+Information Criteria
+
+          Akaike (AIC)                   98586.996
+          Bayesian (BIC)                 99252.297
+          Sample-Size Adjusted BIC       98890.089
+            (n* = (n + 2) / 24)
+
+Chi-Square Test of Model Fit
+
+          Value                            493.080*
+          Degrees of Freedom                   116
+          P-Value                           0.0000
+          Scaling Correction Factor         1.1852
+            for MLR
+
+*   The chi-square value for MLM, MLMV, MLR, ULSMV, WLSM and WLSMV cannot be used
+    for chi-square difference testing in the regular way.  MLM, MLR and WLSM
+    chi-square difference testing is described on the Mplus website.  MLMV, WLSMV,
+    and ULSMV difference testing is done using the DIFFTEST option.
+
+RMSEA (Root Mean Square Error Of Approximation)
+
+          Estimate                           0.036
+          90 Percent C.I.                    0.033  0.039
+          Probability RMSEA <= .05           1.000
+
+CFI/TLI
+
+          CFI                                0.973
+          TLI                                0.956
+
+Chi-Square Test of Model Fit for the Baseline Model
+
+          Value                          14259.106
+          Degrees of Freedom                   190
+          P-Value                           0.0000
+
+SRMR (Standardized Root Mean Square Residual)
+
+          Value                              0.019
+
+
+
+MINIMUM ROTATION FUNCTION VALUE       0.72801
+
+
+
+           GEOMIN ROTATED LOADINGS (* significant at 5% level)
+                  1             2             3             4
+              ________      ________      ________      ________
+ Y1             0.339*       -0.071*       -0.034         0.426*
+ Y2             0.221*        0.067*       -0.007         0.234*
+ Y3             0.410*        0.058*       -0.030         0.342*
+ Y4            -0.094         0.343*        0.145*       -0.056
+ Y5             0.630*       -0.084*        0.020         0.012
+ Y6             0.423*        0.028         0.028         0.425*
+ Y7             0.717*        0.028         0.038        -0.038
+ Y8             0.182*        0.572*        0.013        -0.165*
+ Y9             0.436*        0.194*        0.178*        0.053
+ Y10            0.298*       -0.011         0.178*        0.294*
+ Y11            0.267*       -0.019         0.039         0.187*
+ Y12           -0.005         0.658*       -0.036         0.186*
+ Y13            0.007         0.065*        0.225*        0.281*
+ Y14            0.010         0.083*        0.333*        0.455*
+ Y15            0.021        -0.017         0.758*        0.027
+ Y16            0.008         0.690*        0.031         0.056
+ Y17           -0.016        -0.072*        0.156*        0.467*
+ Y18            0.040         0.007         0.217*        0.633*
+ Y19            0.015        -0.011         0.868*       -0.008
+ Y20            0.214*        0.065*        0.421*        0.031
+
+
+           GEOMIN FACTOR CORRELATIONS (* significant at 5% level)
+                  1             2             3             4
+              ________      ________      ________      ________
+      1         1.000
+      2         0.375*        1.000
+      3         0.615*        0.395*        1.000
+      4         0.626*        0.266*        0.558*        1.000
+
+
+           ESTIMATED RESIDUAL VARIANCES
+              Y1            Y2            Y3            Y4            Y5
+              ________      ________      ________      ________      ________
+                0.579         0.812         0.535         0.863         0.612
+
+
+           ESTIMATED RESIDUAL VARIANCES
+              Y6            Y7            Y8            Y9            Y10
+              ________      ________      ________      ________      ________
+                0.370         0.469         0.615         0.507         0.565
+
+
+           ESTIMATED RESIDUAL VARIANCES
+              Y11           Y12           Y13           Y14           Y15
+              ________      ________      ________      ________      ________
+                0.814         0.495         0.769         0.454         0.392
+
+
+           ESTIMATED RESIDUAL VARIANCES
+              Y16           Y17           Y18           Y19           Y20
+              ________      ________      ________      ________      ________
+                0.475         0.709         0.351         0.246         0.604
+
+
+           S.E. GEOMIN ROTATED LOADINGS
+                  1             2             3             4
+              ________      ________      ________      ________
+ Y1             0.064         0.024         0.025         0.057
+ Y2             0.066         0.027         0.030         0.065
+ Y3             0.061         0.021         0.024         0.060
+ Y4             0.054         0.029         0.034         0.036
+ Y5             0.035         0.025         0.027         0.033
+ Y6             0.047         0.016         0.026         0.047
+ Y7             0.042         0.020         0.029         0.039
+ Y8             0.067         0.032         0.019         0.037
+ Y9             0.050         0.029         0.034         0.037
+ Y10            0.045         0.022         0.043         0.049
+ Y11            0.058         0.025         0.035         0.056
+ Y12            0.020         0.027         0.021         0.048
+ Y13            0.049         0.027         0.047         0.054
+ Y14            0.038         0.024         0.054         0.056
+ Y15            0.024         0.017         0.036         0.036
+ Y16            0.025         0.030         0.025         0.035
+ Y17            0.042         0.026         0.052         0.057
+ Y18            0.035         0.016         0.055         0.052
+ Y19            0.031         0.011         0.029         0.022
+ Y20            0.048         0.025         0.035         0.035
+
+
+           S.E. GEOMIN FACTOR CORRELATIONS
+                  1             2             3             4
+              ________      ________      ________      ________
+      1         0.000
+      2         0.046         0.000
+      3         0.030         0.040         0.000
+      4         0.031         0.051         0.042         0.000
+
+
+           S.E. ESTIMATED RESIDUAL VARIANCES
+              Y1            Y2            Y3            Y4            Y5
+              ________      ________      ________      ________      ________
+                0.020         0.017         0.019         0.017         0.026
+
+
+           S.E. ESTIMATED RESIDUAL VARIANCES
+              Y6            Y7            Y8            Y9            Y10
+              ________      ________      ________      ________      ________
+                0.017         0.029         0.028         0.020         0.020
+
+
+           S.E. ESTIMATED RESIDUAL VARIANCES
+              Y11           Y12           Y13           Y14           Y15
+              ________      ________      ________      ________      ________
+                0.017         0.028         0.020         0.022         0.026
+
+
+           S.E. ESTIMATED RESIDUAL VARIANCES
+              Y16           Y17           Y18           Y19           Y20
+              ________      ________      ________      ________      ________
+                0.028         0.028         0.028         0.030         0.022
+
+
+           Est./S.E. GEOMIN ROTATED LOADINGS
+                  1             2             3             4
+              ________      ________      ________      ________
+ Y1             5.310        -3.018        -1.367         7.437
+ Y2             3.368         2.479        -0.236         3.605
+ Y3             6.764         2.768        -1.224         5.669
+ Y4            -1.755        11.730         4.301        -1.534
+ Y5            17.772        -3.346         0.721         0.367
+ Y6             8.939         1.730         1.082         8.973
+ Y7            17.045         1.388         1.304        -0.985
+ Y8             2.723        18.158         0.696        -4.466
+ Y9             8.788         6.685         5.252         1.452
+ Y10            6.555        -0.505         4.155         5.968
+ Y11            4.622        -0.767         1.117         3.321
+ Y12           -0.230        24.073        -1.703         3.921
+ Y13            0.143         2.391         4.791         5.204
+ Y14            0.260         3.485         6.115         8.115
+ Y15            0.854        -1.024        21.002         0.743
+ Y16            0.332        23.244         1.263         1.612
+ Y17           -0.386        -2.803         2.987         8.219
+ Y18            1.141         0.460         3.935        12.233
+ Y19            0.481        -0.970        29.422        -0.357
+ Y20            4.455         2.584        11.878         0.887
+
+
+           Est./S.E. GEOMIN FACTOR CORRELATIONS
+                  1             2             3             4
+              ________      ________      ________      ________
+      1         0.000
+      2         8.083         0.000
+      3        20.428         9.810         0.000
+      4        20.295         5.182        13.385         0.000
+
+
+           Est./S.E. ESTIMATED RESIDUAL VARIANCES
+              Y1            Y2            Y3            Y4            Y5
+              ________      ________      ________      ________      ________
+               28.547        46.806        27.866        50.038        23.721
+
+
+           Est./S.E. ESTIMATED RESIDUAL VARIANCES
+              Y6            Y7            Y8            Y9            Y10
+              ________      ________      ________      ________      ________
+               21.996        16.361        22.084        25.033        28.424
+
+
+           Est./S.E. ESTIMATED RESIDUAL VARIANCES
+              Y11           Y12           Y13           Y14           Y15
+              ________      ________      ________      ________      ________
+               48.240        17.994        37.948        20.849        14.887
+
+
+           Est./S.E. ESTIMATED RESIDUAL VARIANCES
+              Y16           Y17           Y18           Y19           Y20
+              ________      ________      ________      ________      ________
+               17.197        25.287        12.714         8.115        27.841
+
+
+           FACTOR STRUCTURE
+                  1             2             3             4
+              ________      ________      ________      ________
+ Y1             0.558         0.156         0.384         0.600
+ Y2             0.388         0.209         0.286         0.386
+ Y3             0.627         0.291         0.436         0.597
+ Y4             0.089         0.351         0.192         0.058
+ Y5             0.618         0.163         0.380         0.395
+ Y6             0.717         0.311         0.537         0.713
+ Y7             0.727         0.302         0.469         0.439
+ Y8             0.301         0.602         0.259         0.108
+ Y9             0.651         0.442         0.552         0.477
+ Y10            0.588         0.249         0.521         0.577
+ Y11            0.402         0.147         0.301         0.372
+ Y12            0.336         0.691         0.325         0.338
+ Y13            0.346         0.231         0.412         0.429
+ Y14            0.531         0.339         0.626         0.669
+ Y15            0.497         0.297         0.779         0.459
+ Y16            0.321         0.720         0.340         0.262
+ Y17            0.345         0.108         0.379         0.525
+ Y18            0.573         0.277         0.598         0.781
+ Y19            0.539         0.336         0.868         0.483
+ Y20            0.517         0.320         0.596         0.418
+
+
+MODIFICATION INDICES
+
+
+     MODIFICATION INDICES FOR ANALYSIS WITH 1 FACTOR(S)
+
+
+
+     MODIFICATION INDICES
+
+
+           THETA
+              Y1            Y2            Y3            Y4            Y5
+              ________      ________      ________      ________      ________
+ Y1             0.000
+ Y2            14.488         0.000
+ Y3            57.225        42.430         0.000
+ Y4            23.622         0.889         0.494         0.000
+ Y5            17.960         1.199         5.648        34.639         0.000
+ Y6            30.038         1.983        15.992        13.605        17.379
+ Y7             0.084         0.652         5.424         1.371        72.802
+ Y8            25.537         0.296         2.530       101.650         0.549
+ Y9            16.191        12.985         0.251         4.153         4.221
+ Y10            3.255         0.000         1.316         1.016         6.111
+ Y11            4.829        16.889         4.366         6.859         0.006
+ Y12           13.547         2.998         0.041        53.509        14.915
+ Y13            6.198         0.335         1.173         0.394         8.069
+ Y14            2.560         5.204         9.185         0.330        21.858
+ Y15           18.822         2.163        26.299         3.233        11.423
+ Y16           20.051         0.306         1.528        63.187         9.156
+ Y17           12.824         0.253         0.354         8.415         3.451
+ Y18           12.142         5.249         0.012         3.617         7.069
+ Y19           35.433         9.744        50.604         7.700         4.718
+ Y20           16.489         1.159         1.807        12.174         0.396
+
+
+           THETA
+              Y6            Y7            Y8            Y9            Y10
+              ________      ________      ________      ________      ________
+ Y6             0.000
+ Y7            29.450         0.000
+ Y8            25.361         5.932         0.000
+ Y9             0.285        23.978        85.027         0.000
+ Y10            0.158         0.002         5.311         9.177         0.000
+ Y11            0.823         7.029         4.796         1.854         1.914
+ Y12            0.012         1.374       184.293         5.777         8.994
+ Y13            0.108         2.266         5.867         2.570         6.252
+ Y14            1.915        36.864         7.345         1.223         9.281
+ Y15           38.361         6.692         2.342         4.285         2.657
+ Y16            8.720         0.170       244.326        22.838        16.733
+ Y17            1.571        17.932         8.665        11.122        18.767
+ Y18           38.768        26.916        35.545        23.085         0.119
+ Y19           52.867        11.773         0.013         0.216         2.576
+ Y20           15.605         1.289         7.498         1.808         2.871
+
+
+           THETA
+              Y11           Y12           Y13           Y14           Y15
+              ________      ________      ________      ________      ________
+ Y11            0.000
+ Y12            2.924         0.000
+ Y13            0.061         0.001         0.000
+ Y14            0.005         0.028        43.683         0.000
+ Y15            0.289         8.724         5.807        28.240         0.000
+ Y16            3.100       377.763         0.755         0.010         0.089
+ Y17            3.947        25.651         0.026         0.001         4.442
+ Y18            0.197         2.834         0.083        31.647        11.722
+ Y19            9.292         2.359         0.427         2.757       407.787
+ Y20            1.306         0.048         0.022        10.165        16.457
+
+
+           THETA
+              Y16           Y17           Y18           Y19           Y20
+              ________      ________      ________      ________      ________
+ Y16            0.000
+ Y17           17.384         0.000
+ Y18           22.257        99.634         0.000
+ Y19            0.002         0.002         0.116         0.000
+ Y20            0.003         0.214         1.335        85.449         0.000
+
+
+     EXPECTED PARAMETER CHANGE
+
+
+           THETA
+              Y1            Y2            Y3            Y4            Y5
+              ________      ________      ________      ________      ________
+ Y1             0.000
+ Y2             0.032         0.000
+ Y3             0.066         0.056         0.000
+ Y4            -0.056        -0.011        -0.008         0.000
+ Y5             0.037        -0.010         0.021        -0.071         0.000
+ Y6             0.039         0.010         0.029        -0.036         0.031
+ Y7             0.002         0.006         0.019        -0.013         0.070
+ Y8            -0.056        -0.006        -0.018         0.154        -0.009
+ Y9            -0.032        -0.028         0.004         0.022         0.017
+ Y10            0.015         0.000        -0.010        -0.011         0.021
+ Y11            0.024         0.046         0.024        -0.040         0.001
+ Y12           -0.034         0.016         0.002         0.093        -0.037
+ Y13           -0.023         0.005        -0.010         0.008        -0.027
+ Y14           -0.013        -0.018        -0.025        -0.006        -0.039
+ Y15           -0.033        -0.011        -0.040         0.019        -0.027
+ Y16           -0.048         0.006        -0.014         0.118        -0.034
+ Y17            0.034         0.005         0.006        -0.038        -0.018
+ Y18            0.026        -0.017        -0.001        -0.019        -0.021
+ Y19           -0.043        -0.022        -0.053         0.027        -0.016
+ Y20           -0.029        -0.008        -0.010         0.034        -0.005
+
+
+           THETA
+              Y6            Y7            Y8            Y9            Y10
+              ________      ________      ________      ________      ________
+ Y6             0.000
+ Y7             0.036         0.000
+ Y8            -0.047         0.025         0.000
+ Y9            -0.004         0.036         0.096         0.000
+ Y10           -0.003         0.000        -0.025         0.023         0.000
+ Y11            0.009         0.028        -0.032        -0.014         0.015
+ Y12           -0.001        -0.010         0.166         0.021        -0.027
+ Y13           -0.003        -0.013        -0.030        -0.014        -0.023
+ Y14           -0.010        -0.047        -0.029        -0.008         0.024
+ Y15           -0.040        -0.018        -0.015        -0.015        -0.012
+ Y16           -0.027        -0.004         0.224         0.048        -0.043
+ Y17           -0.010        -0.038        -0.037        -0.030         0.041
+ Y18            0.040        -0.037        -0.059        -0.034        -0.003
+ Y19           -0.044        -0.023        -0.001         0.003        -0.011
+ Y20           -0.024         0.008         0.026         0.009        -0.012
+
+
+           THETA
+              Y11           Y12           Y13           Y14           Y15
+              ________      ________      ________      ________      ________
+ Y11            0.000
+ Y12           -0.021         0.000
+ Y13            0.003         0.000         0.000
+ Y14            0.001         0.001         0.059         0.000
+ Y15           -0.005        -0.024         0.020         0.039         0.000
+ Y16           -0.025         0.231         0.010         0.001         0.003
+ Y17           -0.025        -0.053         0.002         0.000        -0.018
+ Y18           -0.004        -0.014         0.002         0.041        -0.023
+ Y19           -0.029        -0.012         0.005         0.012         0.130
+ Y20           -0.011         0.002        -0.001        -0.022         0.026
+
+
+           THETA
+              Y16           Y17           Y18           Y19           Y20
+              ________      ________      ________      ________      ________
+ Y16            0.000
+ Y17           -0.051         0.000
+ Y18           -0.045         0.085         0.000
+ Y19            0.000         0.000         0.002         0.000
+ Y20            0.000        -0.004        -0.007         0.057         0.000
+
+
+     MODIFICATION INDICES FOR ANALYSIS WITH 2 FACTOR(S)
+
+
+
+     MODIFICATION INDICES
+
+
+           THETA
+              Y1            Y2            Y3            Y4            Y5
+              ________      ________      ________      ________      ________
+ Y1             0.000
+ Y2            13.376         0.000
+ Y3            47.168        41.577         0.000
+ Y4             2.986         0.535         0.272         0.000
+ Y5             8.797         1.584         3.635        20.279         0.000
+ Y6            12.829         1.325        10.464         2.143        10.503
+ Y7             0.007         0.650         5.427         1.377        75.207
+ Y8             0.312         0.111         0.015         9.044         8.932
+ Y9             6.119        12.756         1.327         0.604        10.379
+ Y10            0.042         0.021         3.037         1.113         3.165
+ Y11            1.529        16.514         3.119         2.132         0.189
+ Y12            5.052         6.820         4.945         2.492         2.688
+ Y13            7.925         0.343         1.221         0.727         8.411
+ Y14            5.991         5.493        10.650         0.019        24.959
+ Y15           19.969         1.817        24.065         3.696        10.132
+ Y16            6.929         1.426         0.374         8.773         0.014
+ Y17            2.239         0.074         0.067         0.022        10.042
+ Y18            0.720         7.744         1.664         1.816        18.687
+ Y19           34.843         8.833        46.229         6.625         3.295
+ Y20           13.103         0.925         1.005         8.053         0.024
+
+
+           THETA
+              Y6            Y7            Y8            Y9            Y10
+              ________      ________      ________      ________      ________
+ Y6             0.000
+ Y7            29.951         0.000
+ Y8             4.060        10.000         0.000
+ Y9             0.512        26.457        37.166         0.000
+ Y10            2.792         0.008         0.942        18.837         0.000
+ Y11            0.025         7.242         0.046         0.400         0.789
+ Y12           19.505         4.766         3.418        18.530         0.142
+ Y13            0.190         1.971        10.408         2.203         6.370
+ Y14            3.833        35.320         6.797         0.419         8.411
+ Y15           37.125         4.965         6.586         3.365         1.687
+ Y16            1.574         1.973         4.750         5.162         2.535
+ Y17            9.991        20.157         4.958         3.794        10.648
+ Y18           19.595        31.724         2.860        11.905         3.938
+ Y19           49.156         9.259         2.461         0.277         1.233
+ Y20           12.173         1.903         1.727         1.068         1.283
+
+
+           THETA
+              Y11           Y12           Y13           Y14           Y15
+              ________      ________      ________      ________      ________
+ Y11            0.000
+ Y12            0.071         0.000
+ Y13            0.062         0.032         0.000
+ Y14            0.007         0.773        45.209         0.000
+ Y15            0.131        24.288         6.976        32.594         0.000
+ Y16            0.474        89.840         1.544         1.102         0.449
+ Y17            8.524         1.082         0.004         0.284         4.170
+ Y18            2.211        15.750         0.026        27.644        11.191
+ Y19            7.681        15.940         0.836         4.575       420.726
+ Y20            0.640         6.389         0.002         7.725        19.720
+
+
+           THETA
+              Y16           Y17           Y18           Y19           Y20
+              ________      ________      ________      ________      ________
+ Y16            0.000
+ Y17            1.947         0.000
+ Y18            0.383        74.249         0.000
+ Y19            6.054         0.146         0.657         0.000
+ Y20           15.331         0.011         0.267        90.886         0.000
+
+
+     EXPECTED PARAMETER CHANGE
+
+
+           THETA
+              Y1            Y2            Y3            Y4            Y5
+              ________      ________      ________      ________      ________
+ Y1             0.000
+ Y2             0.030         0.000
+ Y3             0.059         0.055         0.000
+ Y4            -0.019        -0.008         0.006         0.000
+ Y5             0.026        -0.011         0.017        -0.052         0.000
+ Y6             0.025         0.008         0.024        -0.014         0.024
+ Y7             0.001         0.006         0.019        -0.012         0.071
+ Y8             0.006        -0.003         0.001         0.044         0.033
+ Y9            -0.019        -0.028         0.009        -0.008         0.026
+ Y10            0.002        -0.001        -0.015         0.012         0.015
+ Y11            0.014         0.045         0.020        -0.022        -0.005
+ Y12            0.019         0.023         0.020        -0.019        -0.015
+ Y13           -0.026         0.005        -0.010         0.011        -0.028
+ Y14           -0.020        -0.019        -0.027         0.001        -0.042
+ Y15           -0.033        -0.010        -0.038         0.019        -0.025
+ Y16            0.027         0.012         0.006        -0.044         0.001
+ Y17            0.014         0.003        -0.003        -0.002        -0.031
+ Y18            0.006        -0.020        -0.010         0.013        -0.033
+ Y19           -0.042        -0.021        -0.050         0.024        -0.013
+ Y20           -0.026        -0.007        -0.007         0.027        -0.001
+
+
+           THETA
+              Y6            Y7            Y8            Y9            Y10
+              ________      ________      ________      ________      ________
+ Y6             0.000
+ Y7             0.036         0.000
+ Y8            -0.018         0.031         0.000
+ Y9             0.005         0.037         0.060         0.000
+ Y10           -0.012         0.001         0.010         0.033         0.000
+ Y11            0.001         0.028        -0.003        -0.006         0.010
+ Y12            0.032        -0.018        -0.027        -0.035        -0.003
+ Y13           -0.003        -0.012        -0.037        -0.013        -0.023
+ Y14           -0.013        -0.045        -0.026        -0.005         0.023
+ Y15           -0.039        -0.016        -0.024        -0.013        -0.010
+ Y16            0.011        -0.014        -0.042        -0.022        -0.016
+ Y17           -0.025        -0.040         0.027        -0.017         0.030
+ Y18            0.028        -0.039        -0.016        -0.024        -0.015
+ Y19           -0.042        -0.020        -0.014         0.003        -0.008
+ Y20           -0.021         0.009         0.012         0.007        -0.008
+
+
+           THETA
+              Y11           Y12           Y13           Y14           Y15
+              ________      ________      ________      ________      ________
+ Y11            0.000
+ Y12            0.003         0.000
+ Y13            0.003        -0.002         0.000
+ Y14           -0.001         0.007         0.060         0.000
+ Y15           -0.004        -0.038         0.022         0.042         0.000
+ Y16            0.009         0.155         0.014         0.010        -0.006
+ Y17           -0.037        -0.010         0.001        -0.005        -0.017
+ Y18           -0.015         0.030         0.001         0.038        -0.022
+ Y19           -0.026        -0.030         0.007         0.015         0.132
+ Y20           -0.008        -0.019         0.000        -0.019         0.029
+
+
+           THETA
+              Y16           Y17           Y18           Y19           Y20
+              ________      ________      ________      ________      ________
+ Y16            0.000
+ Y17            0.016         0.000
+ Y18            0.006         0.072         0.000
+ Y19           -0.022         0.003         0.005         0.000
+ Y20           -0.035         0.001        -0.003         0.058         0.000
+
+
+     MODIFICATION INDICES FOR ANALYSIS WITH 3 FACTOR(S)
+
+
+
+     MODIFICATION INDICES
+
+
+           THETA
+              Y1            Y2            Y3            Y4            Y5
+              ________      ________      ________      ________      ________
+ Y1             0.000
+ Y2             4.548         0.000
+ Y3            15.145        26.476         0.000
+ Y4             0.341         0.028         3.582         0.000
+ Y5             1.210         5.445         0.020        15.665         0.000
+ Y6             0.838         1.240         2.423         0.004         0.911
+ Y7             5.010         0.060         0.034         0.191        62.891
+ Y8             0.002         0.536         0.388        12.044         7.475
+ Y9            10.423        15.228         0.441         0.190         9.210
+ Y10            0.170         0.167         6.370         1.831         2.417
+ Y11            0.008        13.004         0.393         1.126         1.203
+ Y12            0.159         2.406         0.001         1.087         8.482
+ Y13            4.910         1.022         0.103         0.448         6.242
+ Y14            1.509         2.775         4.017         0.034        18.121
+ Y15            2.154         4.231         1.845         0.243         0.301
+ Y16            3.063         0.264         0.521         6.184         0.207
+ Y17            2.273         0.070         0.130         0.008        10.480
+ Y18            0.100         9.275         3.988         2.444        21.291
+ Y19            1.442         0.306         0.012         0.992         8.824
+ Y20            2.082         0.064         2.683         4.393         1.385
+
+
+           THETA
+              Y6            Y7            Y8            Y9            Y10
+              ________      ________      ________      ________      ________
+ Y6             0.000
+ Y7            11.577         0.000
+ Y8             9.281         8.792         0.000
+ Y9             0.008        25.898        39.406         0.000
+ Y10            6.857         0.013         0.825        21.440         0.000
+ Y11            1.930         4.518         0.199         0.475         0.781
+ Y12            5.269        13.805        11.626        24.044         0.480
+ Y13            0.308         0.770         8.727         1.157         3.955
+ Y14            0.140        25.628         4.567         0.009        14.675
+ Y15            0.015         1.236         2.001         4.174         0.663
+ Y16            0.014         4.397         6.322         5.047         2.984
+ Y17           12.970        20.785         4.545         2.855        13.425
+ Y18           17.817        34.885         3.350         9.162         1.628
+ Y19            0.006         0.284         0.021         0.633         2.659
+ Y20            0.795         8.767         4.459         2.544         0.196
+
+
+           THETA
+              Y11           Y12           Y13           Y14           Y15
+              ________      ________      ________      ________      ________
+ Y11            0.000
+ Y12            0.205         0.000
+ Y13            0.408         0.145         0.000
+ Y14            0.365         3.571        47.188         0.000
+ Y15            4.585         1.468         1.608        14.543         0.000
+ Y16            0.094        63.475         2.669         2.819         5.291
+ Y17            7.984         1.172         0.140         0.006         8.418
+ Y18            2.010        14.192         0.587        39.146        18.181
+ Y19            2.153         1.665        12.721        35.131        27.262
+ Y20            0.014         0.825         0.157        12.989         8.710
+
+
+           THETA
+              Y16           Y17           Y18           Y19           Y20
+              ________      ________      ________      ________      ________
+ Y16            0.000
+ Y17            1.856         0.000
+ Y18            0.119        81.876         0.000
+ Y19            0.331         0.002         0.850         0.000
+ Y20            8.996         0.152         0.017        14.486         0.000
+
+
+     EXPECTED PARAMETER CHANGE
+
+
+           THETA
+              Y1            Y2            Y3            Y4            Y5
+              ________      ________      ________      ________      ________
+ Y1             0.000
+ Y2             0.017         0.000
+ Y3             0.034         0.044         0.000
+ Y4            -0.006        -0.002         0.021         0.000
+ Y5             0.009        -0.020        -0.001        -0.045         0.000
+ Y6            -0.007        -0.008        -0.012        -0.001         0.007
+ Y7            -0.017        -0.002         0.001        -0.005         0.064
+ Y8             0.000        -0.008        -0.007         0.050         0.029
+ Y9            -0.024        -0.030         0.005        -0.004         0.024
+ Y10           -0.003        -0.003        -0.021         0.015         0.013
+ Y11            0.001         0.040         0.007        -0.016        -0.013
+ Y12            0.003         0.013         0.000        -0.013        -0.026
+ Y13           -0.020         0.009        -0.003         0.008        -0.024
+ Y14           -0.010        -0.013        -0.016        -0.002        -0.035
+ Y15            0.010         0.014         0.010        -0.005        -0.004
+ Y16            0.018         0.005        -0.008        -0.036        -0.005
+ Y17            0.014         0.002        -0.003        -0.001        -0.032
+ Y18            0.002        -0.022        -0.015         0.015        -0.035
+ Y19            0.009         0.004        -0.001        -0.010         0.023
+ Y20           -0.010         0.002         0.012         0.020         0.009
+
+
+           THETA
+              Y6            Y7            Y8            Y9            Y10
+              ________      ________      ________      ________      ________
+ Y6             0.000
+ Y7             0.023         0.000
+ Y8            -0.026         0.029         0.000
+ Y9             0.001         0.037         0.061         0.000
+ Y10           -0.018        -0.001         0.009         0.035         0.000
+ Y11           -0.013         0.022        -0.006        -0.007         0.010
+ Y12            0.017        -0.030        -0.053        -0.041        -0.006
+ Y13            0.004        -0.008        -0.034        -0.009        -0.018
+ Y14           -0.003        -0.038        -0.021         0.001         0.030
+ Y15            0.001         0.007        -0.012        -0.013        -0.006
+ Y16           -0.001        -0.020        -0.050        -0.022        -0.017
+ Y17           -0.029        -0.040         0.025        -0.015         0.034
+ Y18            0.027        -0.041        -0.017        -0.021        -0.009
+ Y19            0.000         0.004        -0.001         0.005        -0.012
+ Y20           -0.005         0.019         0.018         0.010        -0.003
+
+
+           THETA
+              Y11           Y12           Y13           Y14           Y15
+              ________      ________      ________      ________      ________
+ Y11            0.000
+ Y12           -0.005         0.000
+ Y13            0.008         0.004         0.000
+ Y14            0.006         0.016         0.061         0.000
+ Y15            0.020        -0.009         0.010         0.028         0.000
+ Y16            0.004         0.146         0.018         0.016         0.020
+ Y17           -0.035        -0.011         0.004         0.001        -0.023
+ Y18           -0.014         0.029         0.006         0.044        -0.027
+ Y19           -0.014         0.010        -0.030        -0.047         0.102
+ Y20            0.001        -0.007        -0.003        -0.024        -0.021
+
+
+           THETA
+              Y16           Y17           Y18           Y19           Y20
+              ________      ________      ________      ________      ________
+ Y16            0.000
+ Y17            0.016         0.000
+ Y18            0.003         0.075         0.000
+ Y19           -0.005         0.000         0.006         0.000
+ Y20           -0.026         0.003         0.001         0.030         0.000
+
+
+     MODIFICATION INDICES FOR ANALYSIS WITH 4 FACTOR(S)
+
+
+
+     MODIFICATION INDICES
+
+
+           THETA
+              Y1            Y2            Y3            Y4            Y5
+              ________      ________      ________      ________      ________
+ Y1             0.000
+ Y2             6.549         0.000
+ Y3            21.234        31.399         0.000
+ Y4             0.573         0.067         3.639         0.000
+ Y5             3.141         6.749         1.295        14.682         0.000
+ Y6             0.089         0.430         0.794         0.007         0.165
+ Y7             7.683         0.153         3.272         0.371         0.577
+ Y8             0.021         0.626         1.053        15.820         0.311
+ Y9             8.389        15.994         0.134         0.002         0.674
+ Y10            0.000         0.019         4.673         1.853         1.778
+ Y11            0.204        14.866         0.689         1.090         5.002
+ Y12            0.021         2.410         0.162         3.269         0.140
+ Y13            5.807         1.161         0.001         0.181         0.584
+ Y14            3.582         3.523         2.537         0.653         0.356
+ Y15            3.002         4.747         2.035         0.263         1.082
+ Y16            2.314         0.184         0.210         7.138         3.593
+ Y17            1.221         0.070         0.005         0.208         0.022
+ Y18            2.651        19.963         6.080         2.021         0.343
+ Y19            2.249         0.406         0.106         0.844         4.035
+ Y20            1.434         0.138         2.334         5.703         0.533
+
+
+           THETA
+              Y6            Y7            Y8            Y9            Y10
+              ________      ________      ________      ________      ________
+ Y6             0.000
+ Y7             9.017         0.000
+ Y8            10.751         0.293         0.000
+ Y9             0.002         0.000        25.897         0.000
+ Y10            5.512         1.658         0.588        23.129         0.000
+ Y11            1.394         1.828         0.745         1.464         1.028
+ Y12            6.302         0.071         6.358        12.530         0.311
+ Y13            0.421         4.169         4.978         0.033         3.693
+ Y14            0.307         0.255         0.136         9.305        19.093
+ Y15            0.199         0.765         3.446         7.019         0.449
+ Y16            0.004         0.003         1.427         1.362         2.759
+ Y17           16.621         0.663        19.504         0.348        16.190
+ Y18           15.410         0.898         3.155         0.228         5.277
+ Y19            0.098         2.835         1.046         0.265         2.885
+ Y20            0.811         0.568         1.935         0.171         0.263
+
+
+           THETA
+              Y11           Y12           Y13           Y14           Y15
+              ________      ________      ________      ________      ________
+ Y11            0.000
+ Y12            0.004         0.000
+ Y13            0.934         0.960         0.000
+ Y14            1.589         0.853        35.804         0.000
+ Y15            4.840         0.844         2.504        20.620         0.000
+ Y16            0.261        32.613         0.883         0.024         6.094
+ Y17            6.823        11.629         1.279        13.945         7.176
+ Y18            1.736         0.170         7.143         0.237        24.713
+ Y19            2.860         8.131         9.690        31.723        29.089
+ Y20            0.007         0.023         0.066         7.297        11.646
+
+
+           THETA
+              Y16           Y17           Y18           Y19           Y20
+              ________      ________      ________      ________      ________
+ Y16            0.000
+ Y17            0.173         0.000
+ Y18            3.595        41.636         0.000
+ Y19            0.001         1.352         8.698         0.000
+ Y20            5.770         2.686         5.586        11.092         0.000
+
+
+     EXPECTED PARAMETER CHANGE
+
+
+           THETA
+              Y1            Y2            Y3            Y4            Y5
+              ________      ________      ________      ________      ________
+ Y1             0.000
+ Y2             0.021         0.000
+ Y3             0.039         0.047         0.000
+ Y4            -0.008        -0.003         0.021         0.000
+ Y5             0.015        -0.023        -0.010        -0.045         0.000
+ Y6            -0.002        -0.004        -0.007        -0.001         0.003
+ Y7            -0.023        -0.003        -0.016         0.007         0.009
+ Y8             0.001        -0.008        -0.011         0.056         0.006
+ Y9            -0.022        -0.030         0.003         0.000        -0.007
+ Y10            0.000        -0.001        -0.018         0.015         0.012
+ Y11            0.005         0.042         0.009        -0.015        -0.026
+ Y12            0.001         0.013         0.004        -0.022         0.004
+ Y13           -0.021         0.010         0.000         0.005        -0.007
+ Y14           -0.015        -0.015        -0.013        -0.009        -0.005
+ Y15            0.012         0.015         0.010        -0.005        -0.008
+ Y16            0.015         0.004        -0.005        -0.039         0.021
+ Y17            0.010         0.002         0.001        -0.006        -0.001
+ Y18           -0.013        -0.034        -0.020         0.014         0.005
+ Y19            0.011         0.005        -0.003        -0.009         0.016
+ Y20           -0.008         0.003         0.011         0.022        -0.005
+
+
+           THETA
+              Y6            Y7            Y8            Y9            Y10
+              ________      ________      ________      ________      ________
+ Y6             0.000
+ Y7             0.022         0.000
+ Y8            -0.028        -0.006         0.000
+ Y9             0.000         0.000         0.050         0.000
+ Y10           -0.016        -0.011         0.008         0.036         0.000
+ Y11           -0.011         0.015        -0.012        -0.012         0.011
+ Y12            0.018        -0.002        -0.040        -0.029        -0.005
+ Y13            0.005         0.019        -0.025         0.002        -0.017
+ Y14           -0.004        -0.004        -0.004         0.023         0.034
+ Y15            0.003         0.006        -0.016        -0.017        -0.005
+ Y16            0.000        -0.001        -0.023        -0.011        -0.016
+ Y17           -0.032        -0.008         0.053         0.005         0.037
+ Y18            0.027         0.008         0.018         0.003        -0.018
+ Y19            0.002        -0.013        -0.009        -0.004        -0.012
+ Y20           -0.005         0.005         0.012         0.003        -0.003
+
+
+           THETA
+              Y11           Y12           Y13           Y14           Y15
+              ________      ________      ________      ________      ________
+ Y11            0.000
+ Y12           -0.001         0.000
+ Y13            0.012        -0.009         0.000
+ Y14            0.013        -0.008         0.053         0.000
+ Y15            0.020        -0.007         0.012         0.033         0.000
+ Y16            0.007         0.119         0.010         0.002         0.021
+ Y17           -0.032        -0.034        -0.012        -0.035        -0.021
+ Y18           -0.013         0.003        -0.023         0.004        -0.032
+ Y19           -0.016         0.023        -0.026        -0.044         0.113
+ Y20           -0.001         0.001         0.002        -0.018        -0.025
+
+
+           THETA
+              Y16           Y17           Y18           Y19           Y20
+              ________      ________      ________      ________      ________
+ Y16            0.000
+ Y17            0.005         0.000
+ Y18           -0.018         0.064         0.000
+ Y19            0.000         0.010         0.020         0.000
+ Y20           -0.020         0.013         0.015         0.028         0.000
+
+
+PLOT INFORMATION
+
+The following plots are available:
+
+  Eigenvalues for exploratory factor analysis
+
+     Beginning Time:  22:10:37
+        Ending Time:  22:10:39
+       Elapsed Time:  00:00:02
+
+
+
+MUTHEN & MUTHEN
+3463 Stoner Ave.
+Los Angeles, CA  90066
+
+Tel: (310) 391-9971
+Fax: (310) 391-8971
+Web: www.StatModel.com
+Support: Support@StatModel.com
+
+Copyright (c) 1998-2018 Muthen & Muthen

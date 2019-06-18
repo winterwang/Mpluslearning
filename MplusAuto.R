@@ -24,7 +24,6 @@ Output <- readModels("ex3.5.out")
 readModels("ex3.5.out", what="summaries")
 
 
-
 # Multilevel modling using Mplus ------------------------------------------
 
 setwd("~/ドキュメント/githubprojects/Mpluslearning/input")
@@ -43,3 +42,28 @@ achieve <- achieve %>%
 
 Model1 <- lm(GPA ~ BStotal + CTA_tot, data = achieve)
 summary(Model1)
+=======
+# Chapter 3 p53 -----------------------------------------------------------
+
+
+runModels("T3-16.inp", showOutput = TRUE, Mplus_command = "/opt/mplus/8.1/mplus")
+
+
+# Chapter 4 4.42 P 74 -----------------------------------------------------
+
+runModels("T4-3.inp", showOutput = TRUE, Mplus_command = "/opt/mplus/8.1/mplus")
+
+
+# read figures  -----------------------------------------------------------
+
+source("mplus.R")
+mplus.view.plots("T4-3.gh5")
+mplus.plot.eigenvalues('T4-3.gh5')
+mplus.get.eigenvalues('T4-3.gh5')
+
+
+
+# Chapter 4 4.5.2 p 87 ----------------------------------------------------
+
+runModels("T4-6a.inp", showOutput = TRUE, Mplus_command = "/opt/mplus/8.1/mplus")
+

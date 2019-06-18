@@ -1,0 +1,19 @@
+TITLE: this is an example of a path analysis
+ DATA: FILE IS "data/8-data.dat";
+ VARIABLE: NAMES ARE age gender a1-a5 e1-e13 b1-b20 c1-c17 d1-d10;
+  USEVARIABLE = stress negtive self depre;
+ DEFINE: stress = sum(a1-a5);
+               negtive= sum(b13-b17);
+               self=sum(d1-d5);
+               depre=sum(e1-e5);
+ANALYSIS: Bootstrap=1000;
+MODEL: depre on stress negtive self;
+              negtive on stress;
+              self on stress;
+MODEL INDIRECT:   depre ind self stress;
+               depre ind negtive stress;
+OUTPUT:  standardized CINTERVAL(BCBOOTSTRAP);
+
+
+            
+
