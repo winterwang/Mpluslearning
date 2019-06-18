@@ -1,0 +1,7 @@
+TITLE:    Model 1.1 Multiple regression model
+DATA: FILE IS "../data/data/achieve.csv"
+VARIABLE: NAMES ARE Male Minority GPA BStotal CTA_tot;
+  usevariables are GPA BStotal CTA_tot; 
+  missing are .;
+MODEL:   GPA ON BStotal CTA_tot; 
+OUTPUT: standardized;

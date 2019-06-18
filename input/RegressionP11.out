@@ -1,0 +1,249 @@
+Mplus VERSION 8.3 (Linux)
+MUTHEN & MUTHEN
+06/18/2019   6:39 PM
+
+INPUT INSTRUCTIONS
+
+  TITLE:    Model 1.1 Multiple regression model
+  DATA: FILE IS "../data/data/achieve.csv"
+  VARIABLE: NAMES ARE Male Minority GPA BStotal CTA_tot;
+    usevariables are GPA BStotal CTA_tot;
+    missing are .;
+  MODEL:   GPA ON BStotal CTA_tot;
+  OUTPUT: standardized;
+
+
+
+*** WARNING in DATA command
+  Statement not terminated by a semicolon:
+  FILE IS "../data/data/achieve.csv"
+*** WARNING
+  Data set contains cases with missing on x-variables.
+  These cases were not included in the analysis.
+  Number of cases with missing on x-variables:  39
+*** WARNING
+  Data set contains cases with missing on all variables except
+  x-variables.  These cases were not included in the analysis.
+  Number of cases with missing on all variables except x-variables:  18
+   3 WARNING(S) FOUND IN THE INPUT INSTRUCTIONS
+
+
+
+Model 1.1 Multiple regression model
+
+SUMMARY OF ANALYSIS
+
+Number of groups                                                 1
+Number of observations                                         429
+
+Number of dependent variables                                    1
+Number of independent variables                                  2
+Number of continuous latent variables                            0
+
+Observed dependent variables
+
+  Continuous
+   GPA
+
+Observed independent variables
+   BSTOTAL     CTA_TOT
+
+
+Estimator                                                       ML
+Information matrix                                        OBSERVED
+Maximum number of iterations                                  1000
+Convergence criterion                                    0.500D-04
+Maximum number of steepest descent iterations                   20
+Maximum number of iterations for H1                           2000
+Convergence criterion for H1                             0.100D-03
+
+Input data file(s)
+  ../data/data/achieve.csv
+
+Input data format  FREE
+
+
+SUMMARY OF DATA
+
+     Number of missing data patterns             1
+
+
+COVARIANCE COVERAGE OF DATA
+
+Minimum covariance coverage value   0.100
+
+
+     PROPORTION OF DATA PRESENT
+
+
+           Covariance Coverage
+              GPA           BSTOTAL       CTA_TOT
+              ________      ________      ________
+ GPA            1.000
+ BSTOTAL        1.000         1.000
+ CTA_TOT        1.000         1.000         1.000
+
+
+
+UNIVARIATE SAMPLE STATISTICS
+
+
+     UNIVARIATE HIGHER-ORDER MOMENT DESCRIPTIVE STATISTICS
+
+         Variable/         Mean/     Skewness/   Minimum/ % with                Percentiles
+        Sample Size      Variance    Kurtosis    Maximum  Min/Max      20%/60%    40%/80%    Median
+
+     GPA                   3.132      -0.758       0.000    0.23%       2.700      3.000      3.140
+             429.000       0.262       2.326       4.000    1.17%       3.300      3.600
+     BSTOTAL              15.995       1.319      10.000   18.88%      11.000     12.000     14.000
+             429.000      42.853       1.122      40.000    0.23%      15.000     21.000
+     CTA_TOT              34.988       0.516      17.000    0.70%      25.000     31.000     33.000
+             429.000     117.587      -0.353      68.000    0.23%      36.000     44.000
+
+
+THE MODEL ESTIMATION TERMINATED NORMALLY
+
+
+
+MODEL FIT INFORMATION
+
+Number of Free Parameters                        4
+
+Loglikelihood
+
+          H0 Value                        -297.003
+          H1 Value                        -297.003
+
+Information Criteria
+
+          Akaike (AIC)                     602.005
+          Bayesian (BIC)                   618.251
+          Sample-Size Adjusted BIC         605.558
+            (n* = (n + 2) / 24)
+
+Chi-Square Test of Model Fit
+
+          Value                              0.000
+          Degrees of Freedom                     0
+          P-Value                           0.0000
+
+RMSEA (Root Mean Square Error Of Approximation)
+
+          Estimate                           0.000
+          90 Percent C.I.                    0.000  0.000
+          Probability RMSEA <= .05           0.000
+
+CFI/TLI
+
+          CFI                                1.000
+          TLI                                1.000
+
+Chi-Square Test of Model Fit for the Baseline Model
+
+          Value                             48.375
+          Degrees of Freedom                     2
+          P-Value                           0.0000
+
+SRMR (Standardized Root Mean Square Residual)
+
+          Value                              0.000
+
+
+
+MODEL RESULTS
+
+                                                    Two-Tailed
+                    Estimate       S.E.  Est./S.E.    P-Value
+
+ GPA      ON
+    BSTOTAL            0.013      0.005      2.662      0.008
+    CTA_TOT           -0.020      0.003     -6.570      0.000
+
+ Intercepts
+    GPA                3.619      0.079     45.793      0.000
+
+ Residual Variances
+    GPA                0.234      0.016     14.646      0.000
+
+
+STANDARDIZED MODEL RESULTS
+
+
+STDYX Standardization
+
+                                                    Two-Tailed
+                    Estimate       S.E.  Est./S.E.    P-Value
+
+ GPA      ON
+    BSTOTAL            0.172      0.064      2.680      0.007
+    CTA_TOT           -0.425      0.062     -6.882      0.000
+
+ Intercepts
+    GPA                7.074      0.233     30.397      0.000
+
+ Residual Variances
+    GPA                0.893      0.028     31.713      0.000
+
+
+STDY Standardization
+
+                                                    Two-Tailed
+                    Estimate       S.E.  Est./S.E.    P-Value
+
+ GPA      ON
+    BSTOTAL            0.026      0.010      2.691      0.007
+    CTA_TOT           -0.039      0.006     -7.042      0.000
+
+ Intercepts
+    GPA                7.074      0.233     30.397      0.000
+
+ Residual Variances
+    GPA                0.893      0.028     31.713      0.000
+
+
+STD Standardization
+
+                                                    Two-Tailed
+                    Estimate       S.E.  Est./S.E.    P-Value
+
+ GPA      ON
+    BSTOTAL            0.013      0.005      2.662      0.008
+    CTA_TOT           -0.020      0.003     -6.570      0.000
+
+ Intercepts
+    GPA                3.619      0.079     45.793      0.000
+
+ Residual Variances
+    GPA                0.234      0.016     14.646      0.000
+
+
+R-SQUARE
+
+    Observed                                        Two-Tailed
+    Variable        Estimate       S.E.  Est./S.E.    P-Value
+
+    GPA                0.107      0.028      3.786      0.000
+
+
+QUALITY OF NUMERICAL RESULTS
+
+     Condition Number for the Information Matrix              0.175E-03
+       (ratio of smallest to largest eigenvalue)
+
+
+     Beginning Time:  18:39:34
+        Ending Time:  18:39:35
+       Elapsed Time:  00:00:01
+
+
+
+MUTHEN & MUTHEN
+3463 Stoner Ave.
+Los Angeles, CA  90066
+
+Tel: (310) 391-9971
+Fax: (310) 391-8971
+Web: www.StatModel.com
+Support: Support@StatModel.com
+
+Copyright (c) 1998-2019 Muthen & Muthen

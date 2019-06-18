@@ -1,9 +1,10 @@
-------Begin Mplus Model Run: 19Oct2018 23:46:13------
-Target directory: input
+------Begin Mplus Model Run: 18 6月2019 18:39:34------
+Target directory: .
 Run options:
 	Recursive (run models in subdirectories): FALSE
-	Show output on console: FALSE
+	Show output on console: TRUE
 	Replace existing outfile: always
 ------
-Currently running model: T3-3_probit.inp
-Run terminated abnormally
+Currently running model: RegressionP11.inp
+
+------End Mplus Model Run: 18 6月2019 18:39:35------

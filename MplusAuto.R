@@ -22,3 +22,24 @@ runModels("ex3.5.inp", showOutput = TRUE, Mplus_command = "/opt/mplus/8.1/mplus"
 
 Output <- readModels("ex3.5.out")
 readModels("ex3.5.out", what="summaries")
+
+
+
+# Multilevel modling using Mplus ------------------------------------------
+
+setwd("~/ドキュメント/githubprojects/Mpluslearning/input")
+runModels("RegressionP11.inp", showOutput = TRUE, Mplus_command = "/opt/mplus/8.3/mplus")
+
+
+achieve <- read_csv("~/ドキュメント/githubprojects/Mpluslearning/data/data/achieve.csv", 
+                    col_names = c("Male", "Minority", "GPA", "BStotal", "CTA_tot"))
+library(naniar)
+library(tidyverse)
+achieve <- achieve %>% 
+  replace_with_na_all(condition = ~.x == ".") %>% 
+  mutate(GPA = as.numeric(GPA), 
+         BStotal = as.numeric(BStotal), 
+         CTA_tot = as.numeric(CTA_tot))
+
+Model1 <- lm(GPA ~ BStotal + CTA_tot, data = achieve)
+summary(Model1)
